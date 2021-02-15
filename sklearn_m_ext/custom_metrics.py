@@ -117,8 +117,8 @@ def _orss_from_cm(cm):
 
 def _extract_values_from_bin_contingency_matrix(cm):
     tp = cm[1, 1]
-    fp = cm[1, 0]
-    fn = cm[0, 1]
+    fp = cm[0, 1]
+    fn = cm[1, 0]
     tn = cm[0, 0]
     return tp, fp, tn, fn
 

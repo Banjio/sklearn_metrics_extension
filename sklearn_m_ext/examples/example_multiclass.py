@@ -18,4 +18,4 @@ regr.fit(X_train, y_train)
 pred = regr.predict(X_test)
 print(classification_report(y_test, pred))
 
-print(custom_metrics.orss_score(y_test, pred))
+print(custom_metrics.classification_report2(y_test, pred))
